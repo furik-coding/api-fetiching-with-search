@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search with fetching</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/{{var_path_env}}css/site.css"/>
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <form id="searchForm"> 
+                <div class="mb-3">
+                    <h2>Search GIF by name</h2>
+                    <input type="text" class="form-control" id="searchInput" placeholder="Search..">
+                </div>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row" id="giphyContainer">
+
+            </div>
+            <div class="giphy__showmore">
+                Load more GIFs
+            </div>
+        </div>
+    </main>
+    
+    <script src="/{{var_path_env}}js/scripts.js"></script>
+</body>
+</html>

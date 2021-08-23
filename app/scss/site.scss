@@ -1,0 +1,45 @@
+﻿html, body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    padding: 30px 0 10px;
+}
+
+.giphy {
+
+    &__item {
+        margin: 0 0 30px;
+
+        &-content {
+            height: 100%;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px 2px #ccc;
+            border-radius: 7px;
+            transition: .3s all ease;
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: 0 0 10px 10px #ccc;
+            }
+
+            
+            img {
+                max-width: 100%;
+            }
+        }
+
+    }
+
+    &__showmore {
+        padding: 30px;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 300;
+        cursor: pointer;
+    }
+}
